@@ -1,6 +1,5 @@
 # Crypto Payment App for FinTech Professionals
-This application uses blockchain technology to transact cryptocurrency payments to fintech professionals
-
+This application uses blockchain technology to transact cryptocurrency payments to fintech professionals.
 
 ---
 <!--Purpose -->
@@ -8,32 +7,32 @@ This application uses blockchain technology to transact cryptocurrency payments 
 
 ### Inputs:
 - Pychain requests the following transactional data: 
-    - Sender information
-    - Recepient information
-    - Amount of transaction
-    - Executing button to "add the block"
+    - Select the employee to pay
+    - Enter hours worked
+    
+    
 - Pychain Ledger
         - Low
         - Medium
         - High
 
 ### Process:
-- The Pychain Ledger
-    - Records each transaction entered
-- Validation Function
-    - "Validate Chain" button
+-  `fintech_finder.py`
+    - This application contains the web 3 interface functions that are visible when running Streamlit
+
+- `cryto_wallet.py`
+    - This file contains the Ethereum transaction functions. It uses import statements, to integrate this `crypto_wallet.py` Python script into the Fintech Finder interface program that is found in the `fintech_finder.py` file.
+
 
 ### Outputs
 - Block Inspector
     - Features:
 
-        - Block data recorded
-        - Hash string
-        - Timestamp
-        - Verification result "True" or "False"
-
-
-  
+        - FinTech Employee Ethereum rate
+        - Rate calculation in Ether
+        - Validation Transaction Hash
+       
+ 
 ---
 <!--Technologies -->
 ## Technologies
@@ -44,8 +43,8 @@ This application uses blockchain technology to transact cryptocurrency payments 
 ### Streamlit
 [streamlit](https://streamlit.io/)
 
-### Blockchain Ledger
-[ledger](https://www.investopedia.com/tech/what-cryptocurrency-public-ledger/)
+### Web 3
+[web3](https://ethereum.org/en/web3/)
 
 ---
 <!--How to run -->
@@ -54,26 +53,31 @@ This application uses blockchain technology to transact cryptocurrency payments 
 
 ## Run the Streamlit application
     streamlit run pychain.py
-![Run Pychain](images/run_block.png)
+
 
 ## Demo Video
-Watch it on [youtube](https://youtu.be/457TewwhdeM)
+Watch it on [youtube](https://youtu.be/2GPO9k_2Rg0)
 
 ---
 <!--Demo -->
-### Ledger (web view)
-![Ledger view](images/ledger1.png)
-### Ledger transaction record
-![Ledger transactions and validation](images/ledger3.png)
-### Validation record
-![Validation record](images/validated.png)
+### Run Streamlit from Git Bash
+![Streamlit](images/streamlit.png)
+### App: Fintech Finder (web view)
+![App](images/old/fintech_finder.png)
+### Ganache Account
+![Ganache](images/old/ganache_account.png)
+### Ganache Transaction Record
+![Transaction](images/transaction.png)
+### Validated Record (See Validated Transaction Hash)
+![Validated](images/validated.png)
 ---
 <!--Version Release -->
 ## Version Release
 
-### Version 1.1
--   Updated code fixing variable errors when validating chain.
--   Tested 11/30/22
+### Version 1.2
+-   Updated code, fixed error message with web-3
+-   Tested 12/25/22
+-   Demo recorded and uploaded to YouTube
 
 ---
 <!--Contributors -->
